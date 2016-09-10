@@ -1,0 +1,22 @@
+version: '2'
+services:
+    node:
+        image: php:7.0-fpm
+        volumes:
+            - ./:/data/project
+    db:
+        image: postgres
+        volumes:
+            - ./services/database/:/var/lob/postgresql/data/
+    nginx:
+        build:
+            context: .
+            dockerfile: Dockerfile-nginx
+        ports:
+            - 8801:80
+        links:
+            - node
+        volumes:
+            - ./:/data/project
+            - ./services/nginx/:/data/config
+
