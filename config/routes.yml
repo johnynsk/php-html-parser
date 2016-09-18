@@ -1,0 +1,14 @@
+/task:
+  method: get
+  resource: task
+  action: find
+
+/task:
+  method: post
+  resource: task
+  action: find
+
+/task/(<id>[\d]+):
+  method: view
+  resource: task
+  action: find

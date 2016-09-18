@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "70fa70d520822da0f760d96ef658be1e",
-    "content-hash": "c092b4e59252830e74ff017f5257d169",
+    "hash": "7d3964964806257c89a100e9eed08d33",
+    "content-hash": "c1f862d8b7c887ed5261f0d13529d591",
     "packages": [
         {
             "name": "paquettg/php-html-parser",
@@ -147,6 +147,275 @@
                 "dependency injection"
             ],
             "time": "2015-09-11 15:10:35"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "f910346ce47513a49ed5b8de197cde26c3f0b193"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/f910346ce47513a49ed5b8de197cde26c3f0b193",
+                "reference": "f910346ce47513a49ed5b8de197cde26c3f0b193",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2016-05-20 11:21:15"
+        },
+        {
+            "name": "symfony/config",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/config.git",
+                "reference": "431d28df9c7bb6e77f8f6289d8670b044fabb9e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/config/zipball/431d28df9c7bb6e77f8f6289d8670b044fabb9e8",
+                "reference": "431d28df9c7bb6e77f8f6289d8670b044fabb9e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/filesystem": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/yaml": "To use the yaml reference dumper"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-08-27 18:50:07"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "bb29adceb552d202b6416ede373529338136e84f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bb29adceb552d202b6416ede373529338136e84f",
+                "reference": "bb29adceb552d202b6416ede373529338136e84f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-07-20 05:44:26"
+        },
+        {
+            "name": "symfony/routing",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/routing.git",
+                "reference": "8edf62498a1a4c57ba317664a4b698339c10cdf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/8edf62498a1a4c57ba317664a4b698339c10cdf6",
+                "reference": "8edf62498a1a4c57ba317664a4b698339c10cdf6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "conflict": {
+                "symfony/config": "<2.8"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.0",
+                "doctrine/common": "~2.2",
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/expression-language": "~2.8|~3.0",
+                "symfony/http-foundation": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation loader",
+                "symfony/config": "For using the all-in-one router or any loader",
+                "symfony/dependency-injection": "For loading routes from a service",
+                "symfony/expression-language": "For using expression matching",
+                "symfony/http-foundation": "For using a Symfony Request object",
+                "symfony/yaml": "For using the YAML loader"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Routing\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Routing Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "router",
+                "routing",
+                "uri",
+                "url"
+            ],
+            "time": "2016-08-16 14:58:24"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-09-02 02:12:52"
         }
     ],
     "packages-dev": [],

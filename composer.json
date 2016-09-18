@@ -1,7 +1,11 @@
 {
     "require": {
         "paquettg/php-html-parser": "~1.7",
-        "pimple/pimple": "~3.0"
+        "pimple/pimple": "~3.0",
+        "sunra/php-simple-html-dom-parser": "1.5.1",
+        "symfony/routing": "~3.1",
+        "symfony/yaml": "~3.1",
+        "symfony/config": "~3.1"
     }
 }
 
