@@ -5,18 +5,17 @@
  * @param string $className
  */
 spl_autoload_register(function ($className) {
-        $fileName = $className;
+    $fileName = $className;
 
-        $fileName = preg_replace('/_/', '/', $fileName);
-        $fileName = preg_replace('/\\\\/', '/', $fileName);
+    $fileName = preg_replace('/_/', '/', $fileName);
+    $fileName = preg_replace('/\\\\/', '/', $fileName);
 
-        $fileName = __DIR__ . DIRECTORY_SEPARATOR . $fileName . '.php';
+    $fileName = __DIR__ . DIRECTORY_SEPARATOR . $fileName . '.php';
 
-        if (file_exists($fileName)) {
-            return require $fileName;
-        }
+    if (file_exists($fileName)) {
+        return require $fileName;
     }
-);
+});
 
 
 if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
@@ -24,4 +23,5 @@ if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php')) {
 }
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
+require_once __DIR__ . '/di.php';
 
